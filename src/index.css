@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Previne zoom-ul ciudat pe iOS la rotirea ecranului */
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+    @apply bg-sana-cream text-sana-gray-900 font-sans antialiased;
+    /* Garanție globală anti-scroll orizontal (foarte important pe mobil) */
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  /* Reducem proporțional dimensiunea titlurilor pe ecrane foarte mici */
+  h1 {
+    @apply font-display text-3xl md:text-5xl lg:text-6xl leading-tight;
+  }
+  h2 {
+    @apply font-display text-2xl md:text-3xl lg:text-4xl leading-snug;
+  }
+  h3 {
+    @apply font-display text-xl md:text-2xl lg:text-3xl;
+  }
+  h4 {
+    @apply font-display text-lg md:text-xl;
+  }
+}
+
+@layer components {
+  /* CONTAINER-X RESPONSIVE:
+     Pe mobil reducem padding-ul la px-4 (16px) pentru a câștiga spațiu, 
+     pe tablete folosim px-6 (24px), iar pe desktop px-12 (48px). */
+  .container-x {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-12;
+  }
+
+  /* BUTOANE RESPONSIVE:
+     Mărim ușor padding-ul pe mobil pentru a respecta standardele de accesibilitate „Touch Target” (minim 48px înălțime),
+     iar textul tracking-widest este foarte ușor optimizat ca să nu se spargă pe ecrane înguste. */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-sana-lime text-sana-gray-900 px-6 py-4 md:px-7 md:py-3.5 rounded-full text-xs md:text-sm font-medium tracking-widest uppercase transition-all duration-300 hover:bg-sana-lime-dark hover:gap-3 text-center;
+  }
+  
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border border-sana-gray-300 text-sana-gray-900 px-6 py-4 md:px-7 md:py-3.5 rounded-full text-xs md:text-sm font-medium tracking-widest uppercase transition-all duration-300 hover:border-sana-gray-900 hover:gap-3 text-center;
+  }
+  
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 bg-sana-gray-900 text-sana-lime px-6 py-4 md:px-7 md:py-3.5 rounded-full text-xs md:text-sm font-medium tracking-widest uppercase transition-all duration-300 hover:bg-sana-gray-800 hover:gap-3 text-center;
+  }
+
+  /* EYEBROW RESPONSIVE:
+     Asigurăm că textul de deasupra titlurilor nu iese în exterior pe ecranele telefoanelor foarte mici */
+  .eyebrow {
+    @apply text-[10px] md:text-xs tracking-[0.25em] md:tracking-[0.3em] uppercase text-sana-lime-dark font-medium block;
+  }
+
+  /* SECTION-PADDING RESPONSIVE:
+     Pe desktop păstrăm spațiile mari aerisite (py-28), dar pe mobil 
+     le micșorăm la py-12 / py-16 pentru ca utilizatorul să nu fie nevoit să facă scroll infinit printre spații goale. */
+  .section-padding {
+    @apply py-12 md:py-20 lg:py-28;
+  }
+}
+
+/* Pause carousel on hover */
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbar - optimizat să nu apară masiv pe mobil */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f0f0eb;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #c4d82e;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8bd1f;
+  }
+}
