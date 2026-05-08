@@ -5,6 +5,7 @@ import ServicesSection from '../components/ServicesSection'
 import GBTSection from '../components/GBTSection'
 import PartnersCarousel from '../components/PartnersCarousel'
 import CTABanner from '../components/CTABanner'
+import ReviewsSection from '../components/ReviewsSection'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ServicesSection />
       <DoctorsSection />
       <GBTSection />
+      <ReviewsSection />
       <PartnersCarousel />
       <CTABanner />
     </>

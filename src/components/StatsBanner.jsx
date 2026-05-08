@@ -2,8 +2,8 @@ import { motion } from 'framer-motion'
 
 const stats = [
   { value: '10+', label: 'Ani de experiență' },
-  { value: '5000+', label: 'Pacienți mulțumiți' },
-  { value: '12', label: 'Specialiști în echipă' },
+  { value: '3500+', label: 'Pacienți mulțumiți' },
+  { value: '100%', label: 'Pacienți care recomandă clinica' },
   { value: '8', label: 'Specializări medicale' },
 ]
 

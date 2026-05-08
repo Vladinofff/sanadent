@@ -255,15 +255,127 @@ The 10'th Annual Megagen International Symposium — Noiembrie 2013, Bangkok
   ],
   profilaxie: [
     {
-      id: 'dr-profilaxie-1',
-      name: 'Dr. [Nume]',
-      role: 'Specialist Profilaxie',
-      photo: '',
-      shortDesc: 'Detartraj profesional și educație personalizată pentru menținerea sănătății orale.',
-      fullDesc: '',
+      id: 'dr-meda-serban',
+      name: 'Dr. Meda Serban',
+      role: 'Fondator · Medic Dentist · Specialist Parodontologie ',
+      photo: '/meda.jpg',
+      shortDesc: '',
+      fullDesc: `
+2003 – 2009 Facultatea de Medicina Dentara UMF Carol Davila / Bucuresti
+
+2010 – 2013 Rezidentiat Medic Specialist Parodontologie UMF Carol Davila / Bucuresti
+
+Cursuri și specializări:
+
+Master Course In Regenerative and Esthetic Periodontal Therapy - Prof Dr hc Anton Sculean (Elveția)
+
+Congres International EuroPerio – Prof Dr hc Anton Sculean, Prof Dr Giovanni Zucchelli, Dr Otto Zuhr
+
+Congresul international UNAS – Prof Dr Alexandru Petre
+
+Conferinta Nationala de Parodontologie – Prof Dr Alexandru Petre
+
+Principii de baza in chirurgia gingivo-osoasa – Prof Dr Andre Saadoun
+
+Curriculum Stiintific de Parodontologie – Prof Dr hc Anton Sculean
+
+Repere moderne in tratamentul chirurgical – Prof Dr Mosche Goldstein
+
+Aspecte Contemporane in Stomatologia Restaurativa – Dr Domenico Ricucci
+
+Simpozion Perio-Transylvania – Prof Dr hc Anton Sculean, Stavropoulos, Kantarci
+
+Curs de Reabilitare Estetica Complexa – Massironi, Conti
+
+Curs de Ocluzologie – Prof Dr Meyer
+
+Curs de Endodontie Clinica – Castellucci
+
+Curs Chirurgie Estetica Muco-Gingivala – Zucchelli
+
+Conceptul MI – Prof Dr John Marton
+
+Principiile Protezarii pe Implanturi – Prof Dr Alexandru Petre
+
+Curs Restaurari Estetice – Dr Alessandro Conti
+`
     },
+    {
+      id: 'dr-bianca-burghel',
+      name: 'Dr. Bianca Burghel',
+      role: 'Medic Dentist · Stomatologie Generală',
+      photo: '/bianca.jpeg',
+      shortDesc: 'Stomatologie generală cu accent pe reabilitare orală și tratamente conservative.',
+      fullDesc: `
+2015-2022 Facultatea de Medicina Dentara UMF Carol Davila/Bucuresti
+
+Cursuri-atestate-supraspecializari:
+
+Cursul "Compozit anterior direct de la A la Z" (teorie si hands-on) – Lector Dr. Cristian Ghita
+
+Simpozionul Asociatiei Medicilor Stomatologi – Actualitati in sfera dento-maxilara
+
+Acordul Pacientului Informat – Comunicarea Medic – Pacient intre inteligenta emotionala si reglementare legala – Prof. Dr. Silviu Mirel Pituru
+
+Curs intensiv de reabilitare orala – Lect. Univ. Dr. Dan Buhatel
+
+Managementul situatiilor clinice ce necesita reabilitarea orala complexa – Prof. Univ. Dr. Norina Forna
+
+Congresul Universitatii de Medicina si Farmacie "Carol Davila" — editia a XI-a – Prof. Dr. Viorel Jinga
+
+Congresul Societatii Romane de Stomatologie – Clasic si modern in stomatologia contemporana
+`
+    },
+
   ],
   'restaurare-coronara': [
+ {
+      id: 'dr-meda-serban',
+      name: 'Dr. Meda Serban',
+      role: 'Fondator · Medic Dentist · Specialist Parodontologie ',
+      photo: '/meda.jpg',
+      shortDesc: '',
+      fullDesc: `
+2003 – 2009 Facultatea de Medicina Dentara UMF Carol Davila / Bucuresti
+
+2010 – 2013 Rezidentiat Medic Specialist Parodontologie UMF Carol Davila / Bucuresti
+
+Cursuri și specializări:
+
+Master Course In Regenerative and Esthetic Periodontal Therapy - Prof Dr hc Anton Sculean (Elveția)
+
+Congres International EuroPerio – Prof Dr hc Anton Sculean, Prof Dr Giovanni Zucchelli, Dr Otto Zuhr
+
+Congresul international UNAS – Prof Dr Alexandru Petre
+
+Conferinta Nationala de Parodontologie – Prof Dr Alexandru Petre
+
+Principii de baza in chirurgia gingivo-osoasa – Prof Dr Andre Saadoun
+
+Curriculum Stiintific de Parodontologie – Prof Dr hc Anton Sculean
+
+Repere moderne in tratamentul chirurgical – Prof Dr Mosche Goldstein
+
+Aspecte Contemporane in Stomatologia Restaurativa – Dr Domenico Ricucci
+
+Simpozion Perio-Transylvania – Prof Dr hc Anton Sculean, Stavropoulos, Kantarci
+
+Curs de Reabilitare Estetica Complexa – Massironi, Conti
+
+Curs de Ocluzologie – Prof Dr Meyer
+
+Curs de Endodontie Clinica – Castellucci
+
+Curs Chirurgie Estetica Muco-Gingivala – Zucchelli
+
+Conceptul MI – Prof Dr John Marton
+
+Principiile Protezarii pe Implanturi – Prof Dr Alexandru Petre
+
+Curs Restaurari Estetice – Dr Alessandro Conti
+`
+    },
+
     {
       id: 'dr-bianca-burghel',
       name: 'Dr. Bianca Burghel',
@@ -336,33 +448,201 @@ Aspecte biologice în prevenirea și tratamentul afecțiunilor pulpare și peria
     },
   ],
   parodontologie: [
-    {
-      id: 'dr-parodontolog-1',
-      name: 'Dr. [Nume]',
-      role: 'Parodontolog',
-      photo: '',
-      shortDesc: 'Specializat în tratamentul afecțiunilor gingiilor și a țesuturilor de susținere ale dinților.',
-      fullDesc: '',
+     {
+      id: 'dr-meda-serban',
+      name: 'Dr. Meda Serban',
+      role: 'Fondator · Medic Dentist · Specialist Parodontologie ',
+      photo: '/meda.jpg',
+      shortDesc: '',
+      fullDesc: `
+2003 – 2009 Facultatea de Medicina Dentara UMF Carol Davila / Bucuresti
+
+2010 – 2013 Rezidentiat Medic Specialist Parodontologie UMF Carol Davila / Bucuresti
+
+Cursuri și specializări:
+
+Master Course In Regenerative and Esthetic Periodontal Therapy - Prof Dr hc Anton Sculean (Elveția)
+
+Congres International EuroPerio – Prof Dr hc Anton Sculean, Prof Dr Giovanni Zucchelli, Dr Otto Zuhr
+
+Congresul international UNAS – Prof Dr Alexandru Petre
+
+Conferinta Nationala de Parodontologie – Prof Dr Alexandru Petre
+
+Principii de baza in chirurgia gingivo-osoasa – Prof Dr Andre Saadoun
+
+Curriculum Stiintific de Parodontologie – Prof Dr hc Anton Sculean
+
+Repere moderne in tratamentul chirurgical – Prof Dr Mosche Goldstein
+
+Aspecte Contemporane in Stomatologia Restaurativa – Dr Domenico Ricucci
+
+Simpozion Perio-Transylvania – Prof Dr hc Anton Sculean, Stavropoulos, Kantarci
+
+Curs de Reabilitare Estetica Complexa – Massironi, Conti
+
+Curs de Ocluzologie – Prof Dr Meyer
+
+Curs de Endodontie Clinica – Castellucci
+
+Curs Chirurgie Estetica Muco-Gingivala – Zucchelli
+
+Conceptul MI – Prof Dr John Marton
+
+Principiile Protezarii pe Implanturi – Prof Dr Alexandru Petre
+
+Curs Restaurari Estetice – Dr Alessandro Conti
+`
     },
   ],
   'estetica-dentara': [
+     {
+      id: 'dr-meda-serban',
+      name: 'Dr. Meda Serban',
+      role: 'Fondator · Medic Dentist · Specialist Parodontologie ',
+      photo: '/meda.jpg',
+      shortDesc: '',
+      fullDesc: `
+2003 – 2009 Facultatea de Medicina Dentara UMF Carol Davila / Bucuresti
+
+2010 – 2013 Rezidentiat Medic Specialist Parodontologie UMF Carol Davila / Bucuresti
+
+Cursuri și specializări:
+
+Master Course In Regenerative and Esthetic Periodontal Therapy - Prof Dr hc Anton Sculean (Elveția)
+
+Congres International EuroPerio – Prof Dr hc Anton Sculean, Prof Dr Giovanni Zucchelli, Dr Otto Zuhr
+
+Congresul international UNAS – Prof Dr Alexandru Petre
+
+Conferinta Nationala de Parodontologie – Prof Dr Alexandru Petre
+
+Principii de baza in chirurgia gingivo-osoasa – Prof Dr Andre Saadoun
+
+Curriculum Stiintific de Parodontologie – Prof Dr hc Anton Sculean
+
+Repere moderne in tratamentul chirurgical – Prof Dr Mosche Goldstein
+
+Aspecte Contemporane in Stomatologia Restaurativa – Dr Domenico Ricucci
+
+Simpozion Perio-Transylvania – Prof Dr hc Anton Sculean, Stavropoulos, Kantarci
+
+Curs de Reabilitare Estetica Complexa – Massironi, Conti
+
+Curs de Ocluzologie – Prof Dr Meyer
+
+Curs de Endodontie Clinica – Castellucci
+
+Curs Chirurgie Estetica Muco-Gingivala – Zucchelli
+
+Conceptul MI – Prof Dr John Marton
+
+Principiile Protezarii pe Implanturi – Prof Dr Alexandru Petre
+
+Curs Restaurari Estetice – Dr Alessandro Conti
+`
+    },
+
     {
-      id: 'dr-estetica-1',
-      name: 'Dr. [Nume]',
-      role: 'Estetică Dentară',
-      photo: '',
-      shortDesc: 'Specializat în albire profesională, fațete ceramice și design digital al zâmbetului.',
-      fullDesc: '',
+      id: 'dr-bianca-burghel',
+      name: 'Dr. Bianca Burghel',
+      role: 'Medic Dentist · Stomatologie Generală',
+      photo: '/bianca.jpeg',
+      shortDesc: 'Stomatologie generală cu accent pe reabilitare orală și tratamente conservative.',
+      fullDesc: `
+2015-2022 Facultatea de Medicina Dentara UMF Carol Davila/Bucuresti
+
+Cursuri-atestate-supraspecializari:
+
+Cursul "Compozit anterior direct de la A la Z" (teorie si hands-on) – Lector Dr. Cristian Ghita
+
+Simpozionul Asociatiei Medicilor Stomatologi – Actualitati in sfera dento-maxilara
+
+Acordul Pacientului Informat – Comunicarea Medic – Pacient intre inteligenta emotionala si reglementare legala – Prof. Dr. Silviu Mirel Pituru
+
+Curs intensiv de reabilitare orala – Lect. Univ. Dr. Dan Buhatel
+
+Managementul situatiilor clinice ce necesita reabilitarea orala complexa – Prof. Univ. Dr. Norina Forna
+
+Congresul Universitatii de Medicina si Farmacie "Carol Davila" — editia a XI-a – Prof. Dr. Viorel Jinga
+
+Congresul Societatii Romane de Stomatologie – Clasic si modern in stomatologia contemporana
+`
     },
   ],
   protetica: [
+     {
+      id: 'dr-meda-serban',
+      name: 'Dr. Meda Serban',
+      role: 'Fondator · Medic Dentist · Specialist Parodontologie ',
+      photo: '/meda.jpg',
+      shortDesc: '',
+      fullDesc: `
+2003 – 2009 Facultatea de Medicina Dentara UMF Carol Davila / Bucuresti
+
+2010 – 2013 Rezidentiat Medic Specialist Parodontologie UMF Carol Davila / Bucuresti
+
+Cursuri și specializări:
+
+Master Course In Regenerative and Esthetic Periodontal Therapy - Prof Dr hc Anton Sculean (Elveția)
+
+Congres International EuroPerio – Prof Dr hc Anton Sculean, Prof Dr Giovanni Zucchelli, Dr Otto Zuhr
+
+Congresul international UNAS – Prof Dr Alexandru Petre
+
+Conferinta Nationala de Parodontologie – Prof Dr Alexandru Petre
+
+Principii de baza in chirurgia gingivo-osoasa – Prof Dr Andre Saadoun
+
+Curriculum Stiintific de Parodontologie – Prof Dr hc Anton Sculean
+
+Repere moderne in tratamentul chirurgical – Prof Dr Mosche Goldstein
+
+Aspecte Contemporane in Stomatologia Restaurativa – Dr Domenico Ricucci
+
+Simpozion Perio-Transylvania – Prof Dr hc Anton Sculean, Stavropoulos, Kantarci
+
+Curs de Reabilitare Estetica Complexa – Massironi, Conti
+
+Curs de Ocluzologie – Prof Dr Meyer
+
+Curs de Endodontie Clinica – Castellucci
+
+Curs Chirurgie Estetica Muco-Gingivala – Zucchelli
+
+Conceptul MI – Prof Dr John Marton
+
+Principiile Protezarii pe Implanturi – Prof Dr Alexandru Petre
+
+Curs Restaurari Estetice – Dr Alessandro Conti
+`
+    },
+
     {
-      id: 'dr-protetician-1',
-      name: 'Dr. [Nume]',
-      role: 'Protetician',
-      photo: '',
-      shortDesc: 'Expertiză în lucrări protetice complexe cu materiale premium pentru rezultate naturale.',
-      fullDesc: '',
+      id: 'dr-bianca-burghel',
+      name: 'Dr. Bianca Burghel',
+      role: 'Medic Dentist · Stomatologie Generală',
+      photo: '/bianca.jpeg',
+      shortDesc: 'Stomatologie generală cu accent pe reabilitare orală și tratamente conservative.',
+      fullDesc: `
+2015-2022 Facultatea de Medicina Dentara UMF Carol Davila/Bucuresti
+
+Cursuri-atestate-supraspecializari:
+
+Cursul "Compozit anterior direct de la A la Z" (teorie si hands-on) – Lector Dr. Cristian Ghita
+
+Simpozionul Asociatiei Medicilor Stomatologi – Actualitati in sfera dento-maxilara
+
+Acordul Pacientului Informat – Comunicarea Medic – Pacient intre inteligenta emotionala si reglementare legala – Prof. Dr. Silviu Mirel Pituru
+
+Curs intensiv de reabilitare orala – Lect. Univ. Dr. Dan Buhatel
+
+Managementul situatiilor clinice ce necesita reabilitarea orala complexa – Prof. Univ. Dr. Norina Forna
+
+Congresul Universitatii de Medicina si Farmacie "Carol Davila" — editia a XI-a – Prof. Dr. Viorel Jinga
+
+Congresul Societatii Romane de Stomatologie – Clasic si modern in stomatologia contemporana
+`
     },
   ],
   ortodontie: [

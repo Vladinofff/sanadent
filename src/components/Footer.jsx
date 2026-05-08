@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Facebook, Youtube, Mail, MapPin, Phone, Clock } from 'lucide-react'
+import { Facebook, Youtube, Instagram, Mail, MapPin, Phone, Clock } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -85,6 +85,14 @@ export default function Footer() {
               <a href="https://www.youtube.com/watch?v=Srt9Q6smbJg" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-sana-gray-700 rounded-full flex items-center justify-center hover:bg-sana-lime hover:border-sana-lime hover:text-sana-gray-900 transition-all">
                 <Youtube size={16} />
               </a>
+              <a 
+  href="https://www.instagram.com/sanadentsolution/" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="w-10 h-10 border border-sana-gray-700 rounded-full flex items-center justify-center hover:bg-sana-lime hover:border-sana-lime hover:text-sana-gray-900 transition-all"
+>
+  <Instagram size={16} />
+</a>
             </div>
           </div>
         </div>

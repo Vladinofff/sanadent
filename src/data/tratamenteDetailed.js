@@ -30,8 +30,8 @@ SFATUL ECHIPEI SANADENT:
 Aveți încredere în inovație și medicină. Implantul nu este singura metodă de a înlocui un dinte lipsă, dar este prima recomandată deoarece mimează cel mai bine natura.
 „Scopul final al medicinei nu este numai să vindece sau să prevină boalele, ci chiar să perfecționeze pe oameni și să-i facă mai fericiți, făcându-i mai buni” – Hipocrate`,
 
-    image1: "/tratamente/implantologie-prezentare.jpg",
-    image2: "/tratamente/implantologie-tehnologie.jpg"
+    image1: "/implantologie.jpg",
+    image2: "/implantologie2.jpg"
   },
   chirurgie: {
     title: "Chirurgie Orală",
@@ -52,8 +52,8 @@ La SanaDent, aplicăm protocoale riguroase de sterilizare prin purificarea și a
 SFATUL ECHIPEI SANADENT:
 După orice intervenție chirurgicală, succesul vindecării depinde enorm de atenția acordată indicațiilor medicului, în special celor legate de igiena riguroasă de acasă.`,
 
-    image1: "/tratamente/chirurgie-prezentare.jpg", // Pune o imagine sugestivă în public/tratamente/
-    image2: "/tratamente/chirurgie-asepsie.jpg"    // Pune o imagine cu cabinetul steril / aparatura
+    image1: "/chirurgie2.jpg", // Pune o imagine sugestivă în public/tratamente/
+    image2: "/chirurgie.jpg"    // Pune o imagine cu cabinetul steril / aparatura
   
   },
   'restaurare-coronara': {
@@ -81,8 +81,8 @@ Diga elimină complet umiditatea și riscul de contaminare a dintelui cu salivă
 SFATUL ECHIPEI SANADENT:
 Fiți veseli și înțelepți! Conștientizați importanța tratării cariilor la timp, înainte ca ele să afecteze nervul dintelui!`,
 
-    image1: "/tratamente/restaurare-prezentare.jpg", // Imagine sugestivă cu dintele afectat / restaurat estetic
-    image2: "/tratamente/restaurare-tehnologie.jpg"  // Imagine cu aplicarea digii sau procesul de obturație la cabinet
+    image1: "/restaurare1.jpg", // Imagine sugestivă cu dintele afectat / restaurat estetic
+    image2: "/restaurare2.jpg"  // Imagine cu aplicarea digii sau procesul de obturație la cabinet
   },
   profilaxie: {
     title: "Profilaxie",
@@ -114,8 +114,8 @@ Principalele metode de profilaxie pe care le aplicăm și le recomandăm sunt:
 Medicii SanaDent vă vor ajuta să cunoașteți, să înțelegeți și să deprindeți aceste metode de profilaxie dentară, pentru că:
 „Grija este absolută, prevenția este idealul” – Cristopher Howson`,
 
-    image1: "/tratamente/profilaxie-prezentare.jpg", // Imagine sugestivă cu detartrajul / zâmbetul curat
-    image2: "/tratamente/profilaxie-metode.jpg"     // Imagine cu tehnica Air Flow / sigilarea / periajul profesional
+    image1: "/profilaxie1.webp", // Imagine sugestivă cu detartrajul / zâmbetul curat
+    image2: "/profilaxie2.png"     // Imagine cu tehnica Air Flow / sigilarea / periajul profesional
   },
   endodontie: {
     title: "Endodonție",
@@ -150,7 +150,7 @@ SFATUL ECHIPEI SANADENT:
 Conștientizați importanța unui tratament de canal efectuat corect și la timp! Amânarea lui duce la transformarea infecțiilor în formă cronică (chisturi osoase dureroase) și, în final, la pierderea dintelui.`,
 
     image1: "/tratamente/endodontie-prezentare.jpg", // Imagine sugestivă cu tratamentul la microscop
-    image2: "/tratamente/endodontie-tehnologie.jpg"  // Imagine cu radiografia digitală / detalii de canal radicular
+    image2: "/endodontie2.jpg"  // Imagine cu radiografia digitală / detalii de canal radicular
   },
   parodontologie: {
     title: "Parodontologie",
@@ -178,8 +178,8 @@ Cheia succesului pe termen lung constă în parteneriatul cu pacientul și în p
 SFATUL ECHIPEI SANADENT:
 Nu ignorați niciodată sângerarea gingivală! Ea este primul semnal de alarmă pe care vi-l transmite organismul. Tratată în faza de gingivită, boala este complet reversibilă.`,
 
-    image1: "/tratamente/parodontologie-prezentare.jpg", // Imagine cu gingii sănătoase / diagnostic parodontal
-    image2: "/tratamente/parodontologie-tehnologie.jpg"  // Imagine cu medicul specialist / tratament laser sau chiuretaj
+    image1: "/parodontologie2.jpg", // Imagine cu gingii sănătoase / diagnostic parodontal
+    image2: "/parodontologie3.jpg"  // Imagine cu medicul specialist / tratament laser sau chiuretaj
   },
   'estetica-dentara': {
     title: "Estetică Dentară",
@@ -215,8 +215,8 @@ Este esențial de înțeles că substanțele de albire nu vor influența culoare
 SFATUL ECHIPEI SANADENT:
 Nu începeți nicio procedură de albire fără o consultație prealabilă. Doar medicul dentist poate evalua dacă aveți dinții perfect igienizați, dacă smalțul este complet sănătos (fără carii active sau fisuri) și dacă rezultatele estimate vor satisface pe deplin așteptările dumneavoastră!`,
 
-    image1: "/tratamente/estetica-prezentare.jpg", // Imagine sugestivă cu un zâmbet strălucitor / fațete
-    image2: "/tratamente/estetica-albire.jpg"       // Imagine din cabinet cu lampa de albire profesională
+    image1: "/estetica1.jpg", // Imagine sugestivă cu un zâmbet strălucitor / fațete
+    image2: "/estetica2.jpg"       // Imagine din cabinet cu lampa de albire profesională
   },
   ortodontie: {
     title: "Ortodonție",
@@ -254,8 +254,8 @@ Dezavantaje & Limite:
 SFATUL ECHIPEI SANADENT:
 Fiecare organism are o capacitate uimitoare de adaptare, însă pentru a evita deteriorarea prematură a dinților, vă recomandăm să planificați o consultație ortodontică timpurie pentru copilul dumneavoastră. Prevenția salvează zâmbete!`,
 
-    image1: "/tratamente/ortodontie-prezentare.jpg", // Imagine sugestivă cu un aparat estetic / safir
-    image2: "/tratamente/ortodontie-invisalign.jpg"  // Imagine cu gutierele transparente Invisalign
+    image1: "/orto1.png", // Imagine sugestivă cu un aparat estetic / safir
+    image2: "/orto2.jpg"  // Imagine cu gutierele transparente Invisalign
   },
   protetica: {
     title: "Protetică Dentară",
@@ -290,8 +290,8 @@ Există însă și situații în care puntea rămâne o alternativă excelentă:
 SFATUL ECHIPEI SANADENT:
 Chiar dacă pierderea unui singur dinte nu pare să vă afecteze masticația imediat, înlocuirea rapidă a acestuia trebuie să fie o prioritate pentru a preveni prăbușirea și migrarea întregii arcade dentare!`,
 
-    image1: "/tratamente/protetica-prezentare.jpg", // Imagine cu coroane de zirconiu / fațete estetice
-    image2: "/tratamente/protetica-tehnologie.jpg"  // Imagine cu diferența vizuală punte vs implant / scanare digitală
+    image1: "/protetica1.jpg", // Imagine cu coroane de zirconiu / fațete estetice
+    image2: "/protetica2.jpg"  // Imagine cu diferența vizuală punte vs implant / scanare digitală
   },
   pedodontie: {
     title: "Pedodonție",
@@ -316,7 +316,7 @@ La SanaDent, ne asigurăm că fiecare vizită se încheie cu un sentiment de reu
 SFATUL ECHIPEI SANADENT:
 Fiți un exemplu demn de urmat pentru copiii dumneavoastră! Transformați ritualul spălatului pe dinți de dimineață și de seară într-o activitate comună, distractivă și interactivă în familie!`,
 
-    image1: "/tratamente/pedodontie-prezentare.jpg", // Imagine caldă cu un copil zâmbitor la consult
-    image2: "/tratamente/pedodontie-tehnologie.jpg"  // Imagine cu interacțiunea dintre medicul pedodont și cel mic
+    image1: "/pedo1.jpg", // Imagine caldă cu un copil zâmbitor la consult
+    image2: "/pedo2.jpg"  // Imagine cu interacțiunea dintre medicul pedodont și cel mic
   }
 }

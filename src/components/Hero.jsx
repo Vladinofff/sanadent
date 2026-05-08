@@ -30,9 +30,9 @@ export default function Hero() {
                     </div>
 
                     <h1 className="text-5xl lg:text-6xl xl:text-7xl font-display leading-[1.1] mb-8 text-white">
-                        Zâmbete sănătoase, <br />
-                        <span className="text-sana-lime italic">încredere</span> pentru o viață.
-                    </h1>
+    Pentru că... <br />
+    meriți să <span className="text-sana-lime italic">zâmbești!</span>
+</h1>
 
                     <p className="text-lg text-sana-gray-300 leading-relaxed mb-10 max-w-xl">
                         Combinăm tehnologia modernă cu o abordare caldă, dedicată fiecărui pacient.
@@ -59,7 +59,7 @@ export default function Hero() {
 
                     {/* Trust signal */}
                     <div className="text-sm text-sana-gray-400 mt-6">
-                        Peste 5000 de pacienți tratați cu succes în București
+                        Peste 3500 de pacienți tratați cu succes în București
                     </div>
                 </motion.div>
             </div>
