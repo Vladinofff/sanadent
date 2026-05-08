@@ -23,7 +23,7 @@ export default function GBTSection() {
           >
             <div className="bg-white rounded-3xl p-4 lg:p-6 shadow-2xl transform transition-transform duration-500 group-hover:scale-[1.02]">
               <img
-                src="/certificat.jpeg"
+                src="/certificat.jfif"
                 alt="Certificat GBT - Guided Biofilm Therapy - SanaDent"
                 className="w-full h-auto rounded-2xl block"
               />
