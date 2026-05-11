@@ -1,14 +1,34 @@
+import { useState, useEffect } from 'react'
 import PageHeader from '../components/PageHeader'
 import CTABanner from '../components/CTABanner'
 import { motion } from 'framer-motion'
+import { X, ZoomIn } from 'lucide-react'
 
 // Informațiile reale pentru design-ul Zig-Zag
 const equipment = [
   {
+    title: 'Microscop Endodontic OPMI Pico Zeiss',
+    subtitle: 'Echipament premium pentru tratamente endodontice de precizie',
+    desc: 'Microscopul endodontic ZEISS OPMI Pico este un echipament premium dedicat tratamentelor endodontice de precizie, oferind imagini clare, iluminare LED performantă și mărire de înaltă calitate.  \n\nDesignul ergonomic asigură confort în timpul procedurilor îndelungate, iar sistemul optic avansat permite identificarea detaliilor fine, canalelor suplimentare și fisurilor dentare. Compact, fiabil și ușor de utilizat, OPMI Pico contribuie la tratamente mai sigure, mai eficiente și cu rezultate excelente pentru pacient.',
+    image: '/zeiss.jpeg',
+  },
+  {
+    title: 'Laser Stomatologic SiroLaser Blue Sirona',
+    subtitle: 'Tehnologie avansată pentru tratamente minim invazive',
+    desc: 'Laserul stomatologic SiroLaser Blue de la Dentsply Sirona este un echipament modern de ultimă generație, conceput pentru tratamente minim invazive și proceduri dentare precise. \n\nTehnologia unică cu trei lungimi de undă permite utilizarea sa în chirurgie gingivală, endodonție, parodontologie și terapii de biostimulare. Oferă tăieturi fine, vindecare rapidă, disconfort redus post-operator și control excelent al sângerării, contribuind la tratamente mai rapide, mai confortabile și mai eficiente pentru pacient.',
+    image: '/sirona.jpeg',
+  },
+  {
+    title: 'Scaner Intraoral Primescan Connect Dentsply Sirona',
+    subtitle: 'Spunem stop amprentelor clasice',
+    desc: 'Scannerul intraoral Primescan Connect de la Dentsply Sirona este o soluție digitală performantă pentru amprentare rapidă, precisă și confortabilă. \n\nCu tehnologie avansată de scanare 3D, permite captarea unei arcade complete oferind imagini detaliate și rezultate fiabile. Designul compact, în configurație cu laptop, asigură mobilitate și integrare ușoară în orice cabinet, iar conectivitatea digitală facilitează colaborarea rapidă cu laboratorul dentar. \n\nPrimescan Connect îmbunătățește experiența pacientului, anulând disconfortul creat de amprentarea cu materialele clasice și folosirea lingurilor de amprentă.',
+    image: '/primescan.jpg',
+  },
+  {
     title: 'Radiologie Retroalveolară Computerizată RVG',
     subtitle: 'Soredex Minray (cu 99% mai puțin iradiantă)',
     desc: 'În majoritatea cazurilor, un diagnostic corect nu se poate pronunța fără o examinare radiologică. Pentru confortul dumneavoastră, dispunem de cabinet propriu de radiologie dotat cu aparatul Soredex Minray.\n\nAstfel, diagnosticul și tratamentul pot fi efectuate în aceeași ședință, fără a fi necesară deplasarea dumneavoastră într-un centru specializat de radioimagistică. Aparatura prezintă sisteme avansate de prevenire a efectelor nocive ale radiațiilor ionizante, doza receptată fiind extrem de scăzută.',
-    image: '/radop.jpg', 
+    image: '/radop.jpg',
   },
   {
     title: 'Microscopul Dentar – Smart Optic',
@@ -47,6 +67,27 @@ const galleryImages = [
 ]
 
 export default function Dotari() {
+  const [lightboxImage, setLightboxImage] = useState(null)
+
+  // Blochează scroll-ul când lightbox-ul e deschis
+  useEffect(() => {
+    if (lightboxImage) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [lightboxImage])
+
+  // Închide cu Escape
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape') setLightboxImage(null)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [])
+
   return (
     <>
       <PageHeader
@@ -75,19 +116,30 @@ export default function Dotari() {
                 >
                   {/* Zona pozei */}
                   <div className="w-full md:w-1/2">
-                    <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-md border border-sana-gray-100 bg-white group">
+                    <div
+                      onClick={() => item.image && setLightboxImage({ src: item.image, alt: item.title })}
+                      className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-md border border-sana-gray-100 bg-gradient-to-br from-sana-gray-50 to-sana-cream group cursor-pointer"
+                    >
                       {item.image ? (
-                        <img
-                          src={item.image}
-                          alt={item.title}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                          onError={(e) => {
-                            e.target.style.display = 'none'
-                            e.target.nextSibling.style.display = 'flex'
-                          }}
-                        />
+                        <>
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className="w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-105"
+                            onError={(e) => {
+                              e.target.style.display = 'none'
+                              e.target.nextSibling.style.display = 'flex'
+                            }}
+                          />
+                          {/* Overlay cu icon zoom la hover */}
+                          <div className="absolute inset-0 bg-sana-gray-900/0 group-hover:bg-sana-gray-900/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none">
+                            <div className="bg-white/95 backdrop-blur-sm rounded-full p-4 shadow-lg">
+                              <ZoomIn size={24} className="text-sana-gray-900" />
+                            </div>
+                          </div>
+                        </>
                       ) : null}
-                      
+
                       {/* Backup în caz de eroare la încărcare */}
                       <div className="hidden absolute inset-0 w-full h-full bg-stone-100 text-stone-400 flex-col items-center justify-center p-6 text-center">
                         <span className="text-xs font-semibold tracking-wider uppercase mb-1">
@@ -133,7 +185,8 @@ export default function Dotari() {
             {galleryImages.map((img) => (
               <div
                 key={img.id}
-                className="group relative aspect-square bg-sana-gray-100 rounded-2xl overflow-hidden border border-sana-gray-100/30 shadow-sm hover:shadow-md transition-all duration-500"
+                onClick={() => setLightboxImage({ src: img.src, alt: img.alt })}
+                className="group relative aspect-square bg-sana-gray-100 rounded-2xl overflow-hidden border border-sana-gray-100/30 shadow-sm hover:shadow-md transition-all duration-500 cursor-pointer"
               >
                 {/* Poza reală */}
                 <img
@@ -141,11 +194,17 @@ export default function Dotari() {
                   alt={img.alt}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   onError={(e) => {
-                    // Dacă poza nu există fizic încă în folderul public/galerie, se va afișa textul de rezervă discret
                     e.target.style.opacity = '0'
                     e.target.nextSibling.style.display = 'flex'
                   }}
                 />
+
+                {/* Overlay cu icon zoom la hover */}
+                <div className="absolute inset-0 bg-sana-gray-900/0 group-hover:bg-sana-gray-900/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-full p-3 shadow-lg">
+                    <ZoomIn size={20} className="text-sana-gray-900" />
+                  </div>
+                </div>
 
                 {/* Textul de rezervă (vizibil doar dacă fișierul imagine lipsește) */}
                 <div className="absolute inset-0 hidden flex-col items-center justify-center text-center p-4 bg-sana-gray-50 text-sana-gray-400">
@@ -163,6 +222,38 @@ export default function Dotari() {
       </section>
 
       <CTABanner />
+
+      {/* Lightbox - se deschide la click pe poză */}
+      {lightboxImage && (
+        <div
+          onClick={() => setLightboxImage(null)}
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 bg-black/90 backdrop-blur-sm animate-fade-in cursor-zoom-out"
+        >
+          {/* Buton închidere */}
+          <button
+            onClick={() => setLightboxImage(null)}
+            className="absolute top-4 right-4 md:top-6 md:right-6 w-12 h-12 rounded-full bg-white/10 hover:bg-sana-lime hover:text-sana-gray-900 text-white flex items-center justify-center transition-all duration-300 z-10"
+            aria-label="Închide"
+          >
+            <X size={24} />
+          </button>
+
+          {/* Poza */}
+          <img
+            src={lightboxImage.src}
+            alt={lightboxImage.alt}
+            onClick={(e) => e.stopPropagation()}
+            className="max-w-full max-h-full object-contain rounded-2xl shadow-2xl cursor-default"
+          />
+
+          {/* Titlu sub poză (opțional, dacă există) */}
+          {lightboxImage.alt && (
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-sm text-white text-xs md:text-sm px-5 py-2.5 rounded-full max-w-[90%] text-center">
+              {lightboxImage.alt}
+            </div>
+          )}
+        </div>
+      )}
     </>
   )
 }
