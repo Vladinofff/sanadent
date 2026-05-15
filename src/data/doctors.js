@@ -721,12 +721,30 @@ Rolul aparatelor mobile in ortodontie – Dr. Horvath Janos (Hungary)
   ],
   pedodontie: [
     {
-      id: 'dr-pedodont-1',
-      name: 'Dr. [Nume]',
-      role: 'Stomatolog Pediatru',
-      photo: '',
-      shortDesc: 'Stomatologie pentru copii într-un mediu prietenos, cu răbdare și empatie.',
-      fullDesc: '',
+      id: 'dr-bianca-burghel',
+      name: 'Dr. Bianca Burghel',
+      role: 'Medic Dentist · Stomatologie Generală',
+      photo: '/bianca.jpeg',
+      shortDesc: 'Stomatologie generală cu accent pe reabilitare orală și tratamente conservative.',
+      fullDesc: `
+2015-2022 Facultatea de Medicina Dentara UMF Carol Davila/Bucuresti
+
+Cursuri-atestate-supraspecializari:
+
+Cursul "Compozit anterior direct de la A la Z" (teorie si hands-on) – Lector Dr. Cristian Ghita
+
+Simpozionul Asociatiei Medicilor Stomatologi – Actualitati in sfera dento-maxilara
+
+Acordul Pacientului Informat – Comunicarea Medic – Pacient intre inteligenta emotionala si reglementare legala – Prof. Dr. Silviu Mirel Pituru
+
+Curs intensiv de reabilitare orala – Lect. Univ. Dr. Dan Buhatel
+
+Managementul situatiilor clinice ce necesita reabilitarea orala complexa – Prof. Univ. Dr. Norina Forna
+
+Congresul Universitatii de Medicina si Farmacie "Carol Davila" — editia a XI-a – Prof. Dr. Viorel Jinga
+
+Congresul Societatii Romane de Stomatologie – Clasic si modern in stomatologia contemporana
+`
     },
   ],
 }

@@ -18,7 +18,7 @@ export default function Hero() {
             </div>
 
             {/* Content */}
-            <div className="container-x relative z-10">
+            <div className="w-full px-6 lg:pl-16 xl:pl-24 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
