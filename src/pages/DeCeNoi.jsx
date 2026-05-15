@@ -34,7 +34,7 @@ const subSections = [
 
 export default function DeCeNoi() {
   // Calea către imaginea ta din folderul public
-  const clinicImagePath = '/pozamare.jpg'
+  const clinicImagePath = '/fatadaa.jpeg'
 
   return (
     <>

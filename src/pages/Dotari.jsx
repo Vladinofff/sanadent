@@ -22,13 +22,13 @@ const equipment = [
     title: 'Scaner Intraoral Primescan Connect Dentsply Sirona',
     subtitle: 'Spunem stop amprentelor clasice',
     desc: 'Scannerul intraoral Primescan Connect de la Dentsply Sirona este o soluție digitală performantă pentru amprentare rapidă, precisă și confortabilă. \n\nCu tehnologie avansată de scanare 3D, permite captarea unei arcade complete oferind imagini detaliate și rezultate fiabile. Designul compact, în configurație cu laptop, asigură mobilitate și integrare ușoară în orice cabinet, iar conectivitatea digitală facilitează colaborarea rapidă cu laboratorul dentar. \n\nPrimescan Connect îmbunătățește experiența pacientului, anulând disconfortul creat de amprentarea cu materialele clasice și folosirea lingurilor de amprentă.',
-    image: '/primescan.jpg',
+    image: '/scannerrr.jpeg',
   },
   {
     title: 'Radiologie Retroalveolară Computerizată RVG',
     subtitle: 'Soredex Minray (cu 99% mai puțin iradiantă)',
     desc: 'În majoritatea cazurilor, un diagnostic corect nu se poate pronunța fără o examinare radiologică. Pentru confortul dumneavoastră, dispunem de cabinet propriu de radiologie dotat cu aparatul Soredex Minray.\n\nAstfel, diagnosticul și tratamentul pot fi efectuate în aceeași ședință, fără a fi necesară deplasarea dumneavoastră într-un centru specializat de radioimagistică. Aparatura prezintă sisteme avansate de prevenire a efectelor nocive ale radiațiilor ionizante, doza receptată fiind extrem de scăzută.',
-    image: '/radop.jpg',
+    image: '/nou.jpeg',
   },
   {
     title: 'Microscopul Dentar – Smart Optic',
@@ -58,7 +58,7 @@ const equipment = [
 
 // Structură de date curată pentru cele 6 poze din galerie
 const galleryImages = [
-  { id: 1, src: '/1.jpg', alt: 'Cabinet stomatologic SanaDent' },
+  { id: 1, src: '/spatiu1.jpeg', alt: 'Cabinet stomatologic SanaDent' },
   { id: 2, src: '/2.jpg', alt: 'Recepție clinică SanaDent' },
   { id: 3, src: '/3.jpg', alt: 'Echipamente moderne stomatologie' },
   { id: 4, src: '/4.jpg', alt: 'Detalii design cabinet medical' },
