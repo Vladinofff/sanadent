@@ -25,6 +25,12 @@ const equipment = [
     image: '/scannerrr.jpeg',
   },
   {
+  title: 'Airflow Prophylaxis Master EMS',
+  subtitle: 'Soluție de referință pentru profilaxia dentară modernă',
+  desc: 'AIRFLOW® Prophylaxis Master este un sistem premium de profilaxie dentară dezvoltat de EMS, conceput pentru îndepărtarea eficientă și minim invazivă a biofilmului, petelor și tartrului. \n\nIntegrând tehnologiile AIRFLOW®, PERIOFLOW® și PIEZON® NO PAIN, aparatul oferă tratamente de igienizare confortabile, precise și sigure, atât supra-, cât și subgingival. \n\nDatorită tehnologiei Guided Biofilm Therapy (GBT), ergonomiei avansate și controlului temperaturii apei, AIRFLOW® Prophylaxis Master îmbunătățește experiența pacientului și optimizează rezultatele clinice, fiind o soluție de referință pentru profilaxia dentară modernă.',
+  image: '/airflow.jpeg',
+},
+  {
     title: 'Radiologie Retroalveolară Computerizată RVG',
     subtitle: 'Soredex Minray (cu 99% mai puțin iradiantă)',
     desc: 'În majoritatea cazurilor, un diagnostic corect nu se poate pronunța fără o examinare radiologică. Pentru confortul dumneavoastră, dispunem de cabinet propriu de radiologie dotat cu aparatul Soredex Minray.\n\nAstfel, diagnosticul și tratamentul pot fi efectuate în aceeași ședință, fără a fi necesară deplasarea dumneavoastră într-un centru specializat de radioimagistică. Aparatura prezintă sisteme avansate de prevenire a efectelor nocive ale radiațiilor ionizante, doza receptată fiind extrem de scăzută.',

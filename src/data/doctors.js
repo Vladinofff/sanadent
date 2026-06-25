@@ -72,6 +72,20 @@ Principiile Protezarii pe Implanturi – Prof Dr Alexandru Petre
 Curs Restaurari Estetice – Dr Alessandro Conti
 `
     },
+    {
+      id: 'dr-larysa-gunescu',
+      name: 'Larysa Gunescu',
+      role: 'Fondator · Managing Partner ',
+      photo: '/larisa.jpeg',
+      shortDesc: '',
+      fullDesc: `
+1994-1998  Academia de Studii Economice/ Bucuresti
+ Managementul Firmei
+ Managementul proiectelor - Sales Opex Certificate – Allianz Group Opex
+Project Management Program – TMI Consulting
+Indicatori Performanta Controlling – Horvath & Partners Management Consultants
+`
+    },
   ],
   implantologie: [
     {
@@ -649,7 +663,7 @@ Congresul Societatii Romane de Stomatologie – Clasic si modern in stomatologia
     {
       id: 'dr-Andreea-Solomon',
       name: 'Dr. Andreea Solomon',
-      role: 'Medic Dentist · Specialist Ortodontie si Ortopedie Dento-Faciala ',
+      role: 'Medic Dentist · Specialist Ortodontie si Ortopedie Dento-Faciala · Specialist Certificat SPARK si INVISALIGN ',
       photo: '/andreea.jpg',
       shortDesc: 'Aparate dentare clasice și invizibile (Invisalign) pentru toate vârstele.',
       fullDesc: `
@@ -706,6 +720,8 @@ Space Management and Interception of Malocclusion in the Developing Dentition, P
 Chirurgia Ortognatica-Ocluzie si mai mult decat atat, Prof Dr. Johan Reyneke (Rep. of South Africa)
 
 Incognito Certification Course -Dr. J.S.Simon (Franta)
+
+Specialist Certificat SPARK si INVISALIGN
 
 Imbunatatirea tratamentului ortodontic – (U.S.A.)
 

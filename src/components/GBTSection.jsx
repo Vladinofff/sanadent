@@ -1,8 +1,30 @@
-import { motion } from 'framer-motion'
-import { Award, CheckCircle2 } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Award, CheckCircle2, Play, X } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 export default function GBTSection() {
+  const [showVideo, setShowVideo] = useState(false)
+
+  // Blochează scroll-ul când videoul e deschis
+  useEffect(() => {
+    if (showVideo) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [showVideo])
+
+  // Închide cu Escape
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape') setShowVideo(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [])
+
   return (
     <section className="section-padding bg-sana-gray-900 text-white relative overflow-hidden">
       {/* Background decoration */}
@@ -70,12 +92,65 @@ export default function GBTSection() {
               />
             </div>
 
-            <Link to="/contact" className="btn-primary">
-              Programează ședință GBT →
-            </Link>
+            {/* Butoane CTA */}
+            <div className="flex flex-wrap gap-4">
+              <Link to="/contact" className="btn-primary">
+                Programează ședință GBT →
+              </Link>
+
+              <button
+                onClick={() => setShowVideo(true)}
+                className="inline-flex items-center gap-2 border border-white/20 text-white hover:border-sana-lime hover:text-sana-lime px-7 py-3.5 rounded-full text-xs md:text-sm font-medium tracking-widest uppercase transition-all duration-300 group"
+              >
+                <Play size={16} className="transition-transform group-hover:scale-110" />
+                Descoperă aici
+              </button>
+            </div>
           </motion.div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      <AnimatePresence>
+        {showVideo && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            onClick={() => setShowVideo(false)}
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 bg-black/90 backdrop-blur-sm cursor-pointer"
+          >
+            {/* Buton închidere */}
+            <button
+              onClick={() => setShowVideo(false)}
+              className="absolute top-4 right-4 md:top-6 md:right-6 w-12 h-12 rounded-full bg-white/10 hover:bg-sana-lime hover:text-sana-gray-900 text-white flex items-center justify-center transition-all duration-300 z-10"
+              aria-label="Închide video"
+            >
+              <X size={24} />
+            </button>
+
+            {/* Container video */}
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              onClick={(e) => e.stopPropagation()}
+              className="w-full max-w-5xl cursor-default"
+            >
+              <video
+                src="/gbt-video.mp4"
+                controls
+                autoPlay
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              >
+                Browserul tău nu suportă videoclipuri HTML5.
+              </video>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   )
 }

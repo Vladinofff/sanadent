@@ -7,11 +7,11 @@ import { motion } from 'framer-motion'
 // Pentru fiecare caz: pune pozele în public/cazuistica/ și referă cu /cazuistica/numefisier.jpg
 // Exemplu: before: '/cazuistica/caz1-inainte.jpg', after: '/cazuistica/caz1-dupa.jpg'
 const cases = [
-  { id: 1, title: 'Reabilitare orală completă', category: 'Implantologie', before: '', after: '', desc: 'Restaurare completă cu implanturi și coroane ceramice.' },
+  { id: 1, title: 'Supraproteza implanturi', category: 'Implantologie', before: '/bf1.jpeg', after: '/bf2.jpeg', desc: 'Recuperarea zâmbetului și a funcției masticatorii pentru pacienții cu edentații extinse.' },
   { id: 2, title: 'Fatete No Prep', category: 'Estetică Dentară', before: '/fatete1.jpeg', after: '/fatete2.jpeg', desc: 'Albire în cabinet cu rezultate vizibile imediat.' },
-  { id: 3, title: 'Fațete ceramice', category: 'Estetică Dentară', before: '', after: '', desc: 'Design digital al zâmbetului cu fațete premium.' },
-  { id: 4, title: 'Tratament Invisalign', category: 'Ortodonție', before: '', after: '', desc: 'Aliniere cu gutiere transparente — 14 luni.' },
-  { id: 5, title: 'Implant unitar', category: 'Implantologie', before: '', after: '', desc: 'Înlocuirea unui dinte lipsă cu implant Megagen.' },
+  { id: 3, title: 'Fatete dentare arcada superioara', category: 'Estetică Dentară', before: '/bf3.jpeg', after: '/bf4.jpeg', desc: 'Transformarea completă a zâmbetului cu fațete ceramice aplicate pe arcada superioară' },
+  { id: 4, title: 'Reabilitare totala arcada superioara', category: 'Protetică', before: '/bf5.jpeg', after: '/bf6.jpeg', desc: 'Restabilirea funcției și esteticii pentru întreaga arcadă superioară prin lucrări protetice complexe.' },
+  { id: 5, title: 'Aparate Dentare', category: 'Ortodonție', before: '/bf7.jpeg', after: '/bf8.jpeg', desc: 'Corectarea malocluziei și obținerea unui zâmbet armonios prin tratament ortodontic complet.' },
   { id: 6, title: 'Coroane pe zirconiu', category: 'Protetică', before: '', after: '', desc: 'Reabilitare cu coroane ceramice pe suport de zirconiu.' },
   { id: 7, title: 'Tratament endodontic', category: 'Endodonție', before: '', after: '', desc: 'Salvarea unui dinte prin tratament de canal la microscop.' },
   { id: 8, title: 'Aparat dentar fix', category: 'Ortodonție', before: '', after: '', desc: 'Aliniere clasică cu aparat metalic — 18 luni.' },
