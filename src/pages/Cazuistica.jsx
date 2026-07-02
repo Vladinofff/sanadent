@@ -12,10 +12,6 @@ const cases = [
   { id: 3, title: 'Fatete dentare arcada superioara', category: 'Estetică Dentară', before: '/bf3.jpeg', after: '/bf4.jpeg', desc: 'Transformarea completă a zâmbetului cu fațete ceramice aplicate pe arcada superioară' },
   { id: 4, title: 'Reabilitare totala arcada superioara', category: 'Protetică', before: '/bf5.jpeg', after: '/bf6.jpeg', desc: 'Restabilirea funcției și esteticii pentru întreaga arcadă superioară prin lucrări protetice complexe.' },
   { id: 5, title: 'Aparate Dentare', category: 'Ortodonție', before: '/bf7.jpeg', after: '/bf8.jpeg', desc: 'Corectarea malocluziei și obținerea unui zâmbet armonios prin tratament ortodontic complet.' },
-  { id: 6, title: 'Coroane pe zirconiu', category: 'Protetică', before: '', after: '', desc: 'Reabilitare cu coroane ceramice pe suport de zirconiu.' },
-  { id: 7, title: 'Tratament endodontic', category: 'Endodonție', before: '', after: '', desc: 'Salvarea unui dinte prin tratament de canal la microscop.' },
-  { id: 8, title: 'Aparat dentar fix', category: 'Ortodonție', before: '', after: '', desc: 'Aliniere clasică cu aparat metalic — 18 luni.' },
-  { id: 9, title: 'Reconstrucție carii frontale', category: 'Restaurare Coronară', before: '', after: '', desc: 'Obturații estetice fronte cu rezultate naturale.' },
 ]
 
 const filters = ['Toate', 'Implantologie', 'Estetică Dentară', 'Ortodonție', 'Protetică', 'Endodonție', 'Restaurare Coronară']

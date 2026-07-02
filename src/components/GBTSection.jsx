@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Award, CheckCircle2, Play, X } from 'lucide-react'
+import { Award, CheckCircle2, Play, X, Phone } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 export default function GBTSection() {
   const [showVideo, setShowVideo] = useState(false)
 
-  // Blochează scroll-ul când videoul e deschis
   useEffect(() => {
     if (showVideo) {
       document.body.style.overflow = 'hidden'
@@ -16,7 +15,6 @@ export default function GBTSection() {
     return () => { document.body.style.overflow = '' }
   }, [showVideo])
 
-  // Închide cu Escape
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === 'Escape') setShowVideo(false)
@@ -27,15 +25,14 @@ export default function GBTSection() {
 
   return (
     <section className="section-padding bg-sana-gray-900 text-white relative overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-sana-lime rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-sana-lime rounded-full blur-3xl" />
       </div>
 
       <div className="container-x relative">
-        <div className="grid grid-cols-1 lg:grid-cols-[5fr_6fr] gap-12 lg:gap-16 items-center">
-          {/* Certificate visual */}
+        {/* PARTEA DE SUS - GBT + Text */}
+        <div className="grid grid-cols-1 lg:grid-cols-[5fr_6fr] gap-12 lg:gap-16 items-center mb-16 lg:mb-24">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -51,14 +48,12 @@ export default function GBTSection() {
               />
             </div>
 
-            {/* Floating badge */}
             <div className="absolute -top-4 -right-4 bg-sana-lime text-sana-gray-900 rounded-full px-5 py-3 flex items-center gap-2 shadow-xl">
               <Award size={18} />
               <span className="text-xs tracking-[0.15em] uppercase font-medium">Certified</span>
             </div>
           </motion.div>
 
-          {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -92,7 +87,6 @@ export default function GBTSection() {
               />
             </div>
 
-            {/* Butoane CTA */}
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="btn-primary">
                 Programează ședință GBT →
@@ -108,6 +102,66 @@ export default function GBTSection() {
             </div>
           </motion.div>
         </div>
+
+        {/* PARTEA DE JOS - Spark + Invisalign */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 rounded-3xl p-8 lg:p-12 overflow-hidden"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-8 lg:gap-12 items-center">
+            {/* STÂNGA - cele 2 poze cu aceeași înălțime */}
+<div className="grid grid-cols-2 gap-4 items-stretch">
+  <div 
+  className="aspect-[4/3] overflow-hidden rounded-2xl flex items-center justify-center"
+  style={{ backgroundColor: '#14b8ca' }}
+>
+  <img
+    src="/spark1.jpeg"
+    alt="Spark Aligners"
+    className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
+  />
+</div>
+<div className="aspect-[4/3] overflow-hidden rounded-2xl bg-white flex items-center justify-center">
+  <img
+    src="/invis.jpeg"
+    alt="Invisalign"
+    className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
+  />
+</div>
+</div>
+
+            {/* DREAPTA - Text + CTA */}
+            <div>
+              <div className="eyebrow text-sana-lime mb-4">Parteneri Oficiali</div>
+              <h3 className="text-3xl lg:text-4xl font-display leading-tight mb-4 text-white">
+                Ortodonție <span className="italic text-sana-lime">invizibilă</span>
+              </h3>
+              <p className="text-sana-gray-300 leading-relaxed mb-6 text-base">
+                Suntem partenerii oficiali <strong className="text-white">Spark</strong> și <strong className="text-white">Invisalign</strong> — cele mai avansate soluții de ortodonție cu gutiere transparente din lume.
+              </p>
+
+              <div className="bg-sana-lime/10 border border-sana-lime/30 rounded-2xl p-5 mb-6">
+                <p className="text-white font-medium text-lg mb-1">
+                  Sună-ne pentru o <span className="text-sana-lime italic">simulare gratuită</span>
+                </p>
+                <p className="text-sm text-sana-gray-300">
+                  Vezi cum îți va arăta zâmbetul înainte să începi tratamentul.
+                </p>
+              </div>
+
+              <a
+                href="tel:+40786511919"
+                className="inline-flex items-center gap-2 bg-sana-lime text-sana-gray-900 px-7 py-3.5 rounded-full text-xs md:text-sm font-medium tracking-widest uppercase transition-all duration-300 hover:bg-sana-lime-dark group"
+              >
+                <Phone size={16} className="transition-transform group-hover:scale-110" />
+                Sună acum: 0786 511 919
+              </a>
+            </div>
+          </div>
+        </motion.div>
       </div>
 
       {/* Video Modal */}
@@ -121,7 +175,6 @@ export default function GBTSection() {
             onClick={() => setShowVideo(false)}
             className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 bg-black/90 backdrop-blur-sm cursor-pointer"
           >
-            {/* Buton închidere */}
             <button
               onClick={() => setShowVideo(false)}
               className="absolute top-4 right-4 md:top-6 md:right-6 w-12 h-12 rounded-full bg-white/10 hover:bg-sana-lime hover:text-sana-gray-900 text-white flex items-center justify-center transition-all duration-300 z-10"
@@ -130,7 +183,6 @@ export default function GBTSection() {
               <X size={24} />
             </button>
 
-            {/* Container video */}
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
