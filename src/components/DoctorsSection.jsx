@@ -160,8 +160,10 @@ function DoctorCard({ doctor }) {
             {doctor.name}
           </h3>
           <div className="text-[7px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.25em] uppercase text-sana-lime-dark font-medium mb-1 leading-relaxed">
-            {doctor.role}
-          </div>
+  {doctor.role.split('|').map((line, i) => (
+    <div key={i}>{line}</div>
+  ))}
+</div>
           <p className="hidden sm:block text-sm text-sana-gray-600 leading-relaxed line-clamp-3">
             {doctor.shortDesc}
           </p>

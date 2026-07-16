@@ -663,7 +663,7 @@ Congresul Societatii Romane de Stomatologie – Clasic si modern in stomatologia
     {
       id: 'dr-Andreea-Solomon',
       name: 'Dr. Andreea Solomon',
-      role: 'Medic Dentist · Specialist Ortodontie si Ortopedie Dento-Faciala · Specialist Certificat SPARK si INVISALIGN ',
+      role: 'Medic Specialist Ortodontie si Ortopedie Dento-Faciala|Specialist Certificat SPARK si INVISALIGN',
       photo: '/andreea.jpg',
       shortDesc: 'Aparate dentare clasice și invizibile (Invisalign) pentru toate vârstele.',
       fullDesc: `

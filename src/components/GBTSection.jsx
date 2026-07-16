@@ -32,7 +32,7 @@ export default function GBTSection() {
 
       <div className="container-x relative">
         {/* PARTEA DE SUS - GBT + Text */}
-        <div className="grid grid-cols-1 lg:grid-cols-[5fr_6fr] gap-12 lg:gap-16 items-center mb-16 lg:mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_7fr] gap-12 lg:gap-16 items-center mb-16 lg:mb-24">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -40,13 +40,13 @@ export default function GBTSection() {
             transition={{ duration: 0.6 }}
             className="relative group"
           >
-            <div className="bg-white rounded-3xl p-4 lg:p-6 shadow-2xl transform transition-transform duration-500 group-hover:scale-[1.02]">
-              <img
-                src="/certificatnou.jpeg"
-                alt="Certificat GBT - Guided Biofilm Therapy - SanaDent"
-                className="w-full h-auto rounded-2xl block"
-              />
-            </div>
+            <div className="rounded-3xl transform transition-transform duration-500 group-hover:scale-[1.02] max-w-md mx-auto">
+  <img
+    src="/certificatnou.jpeg"
+    alt="Certificat GBT - Guided Biofilm Therapy - SanaDent"
+    className="w-full h-auto rounded-3xl block shadow-2xl"
+  />
+</div>
 
             <div className="absolute -top-4 -right-4 bg-sana-lime text-sana-gray-900 rounded-full px-5 py-3 flex items-center gap-2 shadow-xl">
               <Award size={18} />
