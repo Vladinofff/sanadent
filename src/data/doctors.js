@@ -421,7 +421,7 @@ Congresul Societatii Romane de Stomatologie – Clasic si modern in stomatologia
     {
       id: 'dr-irina-eftimescu',
       name: 'Dr. Irina Eftimescu',
-      role: 'Medic Dentist · Specialist Endodonție',
+      role: 'Medic Dentist ·  Endodonție',
       photo: '/irina.jpeg',
       shortDesc: 'Specialist în endodonție, cu practică orientată spre tratamente de canal moderne și microscopie dentară.',
       fullDesc: `

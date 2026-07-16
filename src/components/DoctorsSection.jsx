@@ -159,7 +159,7 @@ function DoctorCard({ doctor }) {
           <h3 className="text-xs sm:text-2xl text-sana-gray-900 mb-0.5 font-semibold truncate">
             {doctor.name}
           </h3>
-          <div className="text-[7px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.25em] uppercase text-sana-lime-dark font-medium mb-1 truncate">
+          <div className="text-[7px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.25em] uppercase text-sana-lime-dark font-medium mb-1 leading-relaxed">
             {doctor.role}
           </div>
           <p className="hidden sm:block text-sm text-sana-gray-600 leading-relaxed line-clamp-3">
