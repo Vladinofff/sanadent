@@ -60,12 +60,12 @@ export default function GBTSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="eyebrow text-sana-lime mb-4">Centru de excelență</div>
+            <div className="eyebrow text-sana-lime mb-4"></div>
             <h2 className="text-4xl lg:text-5xl font-display leading-tight mb-6">
               Suntem <span className="italic text-sana-lime">centru certificat GBT</span>
             </h2>
             <p className="text-sana-gray-300 leading-relaxed mb-8 text-lg">
-              SanaDent este un centru de excelență certificat în <strong className="text-white">Guided Biofilm Therapy</strong> — cea mai modernă metodă de profilaxie dentară, recunoscută internațional.
+              SanaDent este un centru  certificat în <strong className="text-white">Guided Biofilm Therapy</strong> — cea mai modernă metodă de profilaxie dentară, recunoscută internațional.
             </p>
 
             <div className="space-y-4 mb-10">
@@ -93,12 +93,12 @@ export default function GBTSection() {
               </Link>
 
               <button
-                onClick={() => setShowVideo(true)}
-                className="inline-flex items-center gap-2 border border-white/20 text-white hover:border-sana-lime hover:text-sana-lime px-7 py-3.5 rounded-full text-xs md:text-sm font-medium tracking-widest uppercase transition-all duration-300 group"
-              >
-                <Play size={16} className="transition-transform group-hover:scale-110" />
-                Descoperă aici
-              </button>
+  onClick={() => setShowVideo(true)}
+  className="inline-flex items-center gap-2 bg-sana-lime text-sana-gray-900 hover:bg-sana-lime-dark px-7 py-3.5 rounded-full text-xs md:text-sm font-medium tracking-widest uppercase transition-all duration-300 group"
+>
+  <Play size={16} className="transition-transform group-hover:scale-110" />
+  Descoperă aici
+</button>
             </div>
           </motion.div>
         </div>
@@ -135,7 +135,7 @@ export default function GBTSection() {
 
             {/* DREAPTA - Text + CTA */}
             <div>
-              <div className="eyebrow text-sana-lime mb-4">Parteneri Oficiali</div>
+              <div className="eyebrow text-sana-lime mb-4"></div>
               <h3 className="text-3xl lg:text-4xl font-display leading-tight mb-4 text-white">
                 Ortodonție <span className="italic text-sana-lime">invizibilă</span>
               </h3>

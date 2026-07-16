@@ -74,7 +74,7 @@ export default function ReviewsSection() {
 
             {/* Total reviews */}
             <div className="text-sm text-sana-gray-300">
-              Bazat pe <span className="text-white font-medium">{googleStats.totalReviews}</span> recenzii
+              
             </div>
 
             {/* CTA */}
