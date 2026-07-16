@@ -23,7 +23,7 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20 mb-16 items-end">
           <div>
             <div className="eyebrow mb-4">Tratamentele noastre</div>
-            <h2 className="text-4xl lg:text-5xl text-sana-gray-900 leading-tight">
+            <h2 className="text-3xl lg:text-4xl text-sana-gray-900 leading-tight">
               Tratamente <span className="italic">complete</span> pentru fiecare nevoie
             </h2>
           </div>

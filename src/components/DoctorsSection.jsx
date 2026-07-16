@@ -21,7 +21,7 @@ export default function DoctorsSection() {
         <div className="container-x relative">
           <div className="text-center max-w-2xl mx-auto">
             <div className="eyebrow text-sana-lime mb-4">Echipa noastră</div>
-            <h2 className="text-4xl lg:text-5xl text-white mb-6 leading-tight font-display">
+            <h2 className="text-3xl lg:text-4xl text-white mb-6 leading-tight font-display">
               Specialiștii care au grijă de <span className="italic text-sana-lime">zâmbetul tău</span>
             </h2>
             <p className="text-sana-gray-300 leading-relaxed text-sm md:text-base">

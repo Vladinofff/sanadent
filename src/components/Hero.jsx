@@ -59,7 +59,7 @@ export default function Hero() {
 
                     {/* Trust signal */}
                     <div className="text-sm text-sana-gray-400 mt-6">
-                        Peste 3500 de pacienți tratați cu succes în București
+                        Peste 3500 de pacienți tratați 
                     </div>
                 </motion.div>
             </div>
