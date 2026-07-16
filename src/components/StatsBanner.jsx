@@ -4,7 +4,7 @@ const stats = [
   { value: '10+', label: 'Ani de experiență' },
   { value: '3500+', label: 'Pacienți mulțumiți' },
   { value: '100%', label: 'Pacienți care recomandă clinica' },
-  { value: '8', label: 'Specializări medicale' },
+  { value: '8', label: 'Specialități medicale' },
 ]
 
 export default function StatsBanner() {

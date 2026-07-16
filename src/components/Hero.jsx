@@ -29,14 +29,14 @@ export default function Hero() {
                         Centru de Stomatologie · București
                     </div>
 
-                    <h1 className="text-5xl lg:text-6xl xl:text-7xl font-display leading-[1.1] mb-8 text-white">
+                    <h1 className="text-4xl lg:text-5xl xl:text-6xl font-display leading-[1.1] mb-8 text-white">
     Pentru că... <br />
     meriți să <span className="text-sana-lime italic">zâmbești!</span>
 </h1>
 
                     <p className="text-lg text-sana-gray-300 leading-relaxed mb-10 max-w-xl">
-                        Combinăm tehnologia modernă cu o abordare caldă, dedicată fiecărui pacient.
-                        De la consultații de rutină la tratamente complexe — toate sub același acoperiș.
+                        De la consultații de rutină la tratamente complexe , 
+                        combinăm tehnologia modernă cu o abordare caldă, dedicată fiecărui pacient.
                     </p>
 
                     <div className="flex flex-wrap gap-4">
