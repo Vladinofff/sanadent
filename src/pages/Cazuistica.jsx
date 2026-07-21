@@ -12,6 +12,8 @@ const cases = [
   { id: 3, title: 'Fatete dentare arcada superioara', category: 'Estetică Dentară', before: '/bf3.jpeg', after: '/bf4.jpeg', desc: 'Transformarea completă a zâmbetului cu fațete ceramice aplicate pe arcada superioară' },
   { id: 4, title: 'Reabilitare totala arcada superioara', category: 'Protetică', before: '/bf5.jpeg', after: '/bf6.jpeg', desc: 'Restabilirea funcției și esteticii pentru întreaga arcadă superioară prin lucrări protetice complexe.' },
   { id: 5, title: 'Aparate Dentare', category: 'Ortodonție', before: '/bf7.jpeg', after: '/bf8.jpeg', desc: 'Corectarea malocluziei și obținerea unui zâmbet armonios prin tratament ortodontic complet.' },
+  { id: 6, title: 'Restaurare Coronară', category: 'Restaurare Coronară', before: '/bf14.jpeg', after: '/bf15.jpeg', desc: 'Reconstrucția dinților afectați prin obturații și coroane estetice cu rezultate naturale.' },
+
 ]
 
 const filters = ['Toate', 'Implantologie', 'Estetică Dentară', 'Ortodonție', 'Protetică', 'Endodonție', 'Restaurare Coronară']
@@ -61,7 +63,7 @@ export default function Cazuistica() {
                 className="group"
               >
                 {/* Container poză - cu slider dacă există ambele poze, placeholder dacă nu */}
-                <div className="relative bg-sana-gray-200 rounded-3xl aspect-[4/5] overflow-hidden mb-4">
+                <div className="relative bg-sana-gray-200 rounded-3xl aspect-[3/2] overflow-hidden mb-4">
                   {c.before && c.after ? (
                     <BeforeAfterSlider before={c.before} after={c.after} title={c.title} />
                   ) : (

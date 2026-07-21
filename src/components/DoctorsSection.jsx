@@ -1,18 +1,37 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowRight, User } from 'lucide-react'
+import { ArrowRight, User, X } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { categories, doctors } from '../data/doctors'
 
-export default function DoctorsSection() {
+export default function DoctorsSection({ showAllButton = true, showAllAsModal = false }) {
   const [activeCategory, setActiveCategory] = useState('fondatori')
+  const [showAllModal, setShowAllModal] = useState(false)
   const activeDoctors = doctors[activeCategory] || []
+
+  // Blochează scroll când modalul e deschis
+  useEffect(() => {
+    if (showAllModal) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [showAllModal])
+
+  // Închide cu Escape
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape') setShowAllModal(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [])
 
   return (
     <section className="bg-sana-cream">
       {/* BANNER ÎNTUNECAT - doar pentru header */}
       <div className="bg-sana-gray-900 text-white py-16 md:py-20 relative overflow-hidden">
-        {/* Background decoration subtilă */}
         <div className="absolute inset-0 opacity-5 pointer-events-none">
           <div className="absolute top-1/2 left-1/4 w-72 h-72 bg-sana-lime rounded-full blur-3xl" />
           <div className="absolute top-1/2 right-1/4 w-72 h-72 bg-sana-lime rounded-full blur-3xl" />
@@ -116,15 +135,143 @@ export default function DoctorsSection() {
             </div>
           </div>
 
-          {/* See all link */}
-          <div className="text-center mt-12 md:mt-16">
-            <Link to="/de-ce-noi/echipa" className="btn-outline text-xs md:text-sm">
-              Vezi toți doctorii <ArrowRight size={16} />
-            </Link>
-          </div>
+          {/* See all link/button */}
+          {showAllButton && (
+            <div className="text-center mt-12 md:mt-16">
+              {showAllAsModal ? (
+                <button
+                  onClick={() => setShowAllModal(true)}
+                  className="btn-outline text-xs md:text-sm"
+                >
+                  Vezi toți doctorii <ArrowRight size={16} />
+                </button>
+              ) : (
+                <Link to="/de-ce-noi/echipa" className="btn-outline text-xs md:text-sm">
+                  Vezi toți doctorii <ArrowRight size={16} />
+                </Link>
+              )}
+            </div>
+          )}
         </div>
       </div>
+
+      {/* Modal cu TOȚI doctorii */}
+      <AnimatePresence>
+        {showAllModal && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            onClick={() => setShowAllModal(false)}
+            className="fixed inset-0 z-[100] flex items-start justify-center p-4 md:p-8 bg-black/80 backdrop-blur-sm overflow-y-auto"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 30 }}
+              transition={{ duration: 0.4 }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-white rounded-3xl max-w-4xl w-full my-8 relative"
+            >
+              {/* Buton închidere */}
+              <button
+                onClick={() => setShowAllModal(false)}
+                className="absolute top-4 right-4 w-12 h-12 rounded-full bg-sana-gray-100 hover:bg-sana-gray-900 hover:text-sana-lime text-sana-gray-700 flex items-center justify-center transition-all duration-300 z-10 shadow-md"
+                aria-label="Închide"
+              >
+                <X size={20} />
+              </button>
+
+              <div className="p-6 md:p-10">
+                {/* Header modal */}
+                <div className="mb-8 pr-16">
+                  <div className="eyebrow text-sana-lime-dark mb-2">Echipa completă</div>
+                  <h2 className="text-3xl md:text-4xl font-display text-sana-gray-900">
+                    Toți doctorii SanaDent
+                  </h2>
+                </div>
+
+                {/* Lista doctori grupați pe categorii */}
+                <div className="space-y-10">
+                  {categories.map((category) => {
+                    const categoryDoctors = doctors[category.id] || []
+                    if (categoryDoctors.length === 0) return null
+
+                    return (
+                      <div key={category.id}>
+                        {/* Titlu categorie */}
+                        <div className="mb-4">
+                          <h3 className="text-xl md:text-2xl font-display text-sana-gray-900 mb-1">
+                            {category.label}
+                          </h3>
+                          <div className="w-12 h-0.5 bg-sana-lime"></div>
+                        </div>
+
+                        {/* Cardurile doctorilor */}
+                        <div className="space-y-3">
+                          {categoryDoctors.map((doctor) => (
+                            <ModalDoctorCard 
+                              key={`${category.id}-${doctor.id}`} 
+                              doctor={doctor} 
+                              onClose={() => setShowAllModal(false)}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
+  )
+}
+
+// Card simplu pentru doctori în modal
+function ModalDoctorCard({ doctor, onClose }) {
+  return (
+    <Link
+      to={`/doctori/${doctor.id}`}
+      onClick={onClose}
+      className="group flex items-center gap-4 p-4 rounded-2xl bg-sana-cream hover:bg-sana-lime/10 transition-all duration-300"
+    >
+      {/* Photo */}
+      <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden bg-sana-gray-100 flex-shrink-0">
+        {doctor.photo ? (
+          <img
+            src={doctor.photo}
+            alt={doctor.name}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-sana-gray-400">
+            <User size={24} strokeWidth={1.2} />
+          </div>
+        )}
+      </div>
+
+      {/* Info */}
+      <div className="flex-1 min-w-0">
+        <h4 className="text-sm md:text-base font-semibold text-sana-gray-900 mb-1">
+          {doctor.name}
+        </h4>
+        <div className="text-[9px] md:text-[10px] tracking-[0.2em] uppercase text-sana-lime-dark font-medium">
+          {doctor.role && doctor.role.split('|').map((line, i) => (
+            <div key={i}>{line}</div>
+          ))}
+        </div>
+      </div>
+
+      {/* Arrow */}
+      <ArrowRight 
+        size={18} 
+        className="text-sana-gray-400 group-hover:text-sana-lime-dark group-hover:translate-x-1 transition-all duration-300 flex-shrink-0" 
+      />
+    </Link>
   )
 }
 
@@ -160,10 +307,10 @@ function DoctorCard({ doctor }) {
             {doctor.name}
           </h3>
           <div className="text-[7px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.25em] uppercase text-sana-lime-dark font-medium mb-1 leading-relaxed">
-  {doctor.role.split('|').map((line, i) => (
-    <div key={i}>{line}</div>
-  ))}
-</div>
+            {doctor.role && doctor.role.split('|').map((line, i) => (
+              <div key={i}>{line}</div>
+            ))}
+          </div>
           <p className="hidden sm:block text-sm text-sana-gray-600 leading-relaxed line-clamp-3">
             {doctor.shortDesc}
           </p>

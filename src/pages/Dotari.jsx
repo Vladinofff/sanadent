@@ -36,12 +36,7 @@ const equipment = [
     desc: 'În majoritatea cazurilor, un diagnostic corect nu se poate pronunța fără o examinare radiologică. Pentru confortul dumneavoastră, dispunem de cabinet propriu de radiologie dotat cu aparatul Soredex Minray.\n\nAstfel, diagnosticul și tratamentul pot fi efectuate în aceeași ședință, fără a fi necesară deplasarea dumneavoastră într-un centru specializat de radioimagistică. Aparatura prezintă sisteme avansate de prevenire a efectelor nocive ale radiațiilor ionizante, doza receptată fiind extrem de scăzută.',
     image: '/nou.jpeg',
   },
-  {
-    title: 'Microscopul Dentar – Smart Optic',
-    subtitle: 'Soluții endodontice de înaltă precizie și calitate',
-    desc: 'Tratamentele de canal (endodontice) realizate sub microscopul Smart Optic ne permit să salvăm dinți care altfel ar fi fost extrași. \n\nMagnificarea vizuală de înaltă definiție și iluminarea puternică îi oferă medicului specialist o vizibilitate perfectă asupra anatomiei interne a dintelui, asigurând curățarea și sigilarea impecabilă a canalelor radiculare.',
-    image: '/smart.jpg',
-  },
+  
   {
     title: 'Tratament Endodontic Rotativ',
     subtitle: 'VDW Silver Reciproc',

@@ -341,6 +341,19 @@ Congresul Societatii Romane de Stomatologie – Clasic si modern in stomatologia
 `
     },
 
+    {
+      id: 'dr-destan-firinciogullari',
+      name: 'Dr. Destan Firinciogullari',
+      role: 'Medic Dentist · Stomatologie Generala ',
+      photo: '/destan.jpeg',
+      shortDesc: '',
+      fullDesc: `
+Despre mine / Cursuri de specializare: 2018-2024 Facultatea de Medicina Dentara UMF Carol Davila/Bucuresti                                                  Congresul Societatii Romane de Stomatologie - "Tendinte actuale in medicina dentara, Analog sau Digital"- Bucuresti.                                         
+"Workshopul The Aesthetic treatment of the Anterior teeth:
+Single shade, Layering, Injectable"-Dr. Giancarlo Pongione
+`
+    },
+
   ],
   'restaurare-coronara': [
  {

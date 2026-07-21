@@ -28,7 +28,7 @@ export default function Preturi() {
           <div className="bg-sana-lime/20 border border-sana-lime rounded-2xl p-5 mb-10 flex items-start gap-3 max-w-4xl mx-auto">
             <Info className="text-sana-gray-900 flex-shrink-0 mt-0.5" size={20} />
             <div className="text-sm text-sana-gray-800 leading-relaxed">
-              Prețurile sunt în <strong>RON</strong> și sunt orientative. Costul final al unui tratament se stabilește în urma consultației, în funcție de complexitatea cazului. Pentru tratamente complexe oferim plan personalizat și posibilitatea plății în rate.
+              Prețurile sunt în <strong>RON</strong> și sunt orientative. Costul final al unui tratament se stabilește în urma consultației, în funcție de complexitatea cazului. Pentru tratamente complexe oferim plan de tratament personalizat.
             </div>
           </div>
 
