@@ -126,7 +126,7 @@ Medicii SanaDent vă vor ajuta să cunoașteți, să înțelegeți și să depri
 
 Endodonția reprezintă tratamentul nervului care se află în interiorul dintelui, fiind una dintre cele mai întâlnite și importante intervenții stomatologice. Ca specialitate aparte în medicina dentară, endodonția s-a născut tocmai din importanța majoră și dificultatea tratării corecte a interiorului dintelui. Tratamentul endodontic (cunoscut și ca „tratamentul de canal” sau „extirparea nervului”) reprezintă o adevărată piatră de temelie în întregul ce alcătuiește reabilitarea completă a cavității bucale. Executat corect, acest tratament este pentru toată viața.
 
-La SanaDent, intervențiile endodontice sunt realizate de medici cu înaltă specializare și experiență, folosind soluții „pain free” și tratamente asistate de microscop dentar intraoperator – cea mai complexă formulă de lucru existentă în prezent la nivel mondial. 
+La SanaDent, intervențiile endodontice sunt realizate de medici cu o bogată experiență, folosind soluții „pain free” și tratamente asistate de microscop dentar intraoperator – cea mai complexă formulă de lucru existentă în prezent la nivel mondial. 
 
 Cu ajutorul microscopului, care poate mări imaginea de până la 22 de ori și furnizează o lumină coaxială puternică, medicul poate observa detalii anatomice imposibil de sesizat cu ochiul liber. Calitatea deosebită a imaginii, fidelitatea culorilor și vizualizarea directă sub control vizual permit salvarea unor dinți care în trecut ar fi fost extrași fără ezitare. 
 
@@ -149,7 +149,7 @@ Deși implică tehnologie de vârf și implicit costuri inițiale, tratamentul e
 SFATUL ECHIPEI SANADENT:
 Conștientizați importanța unui tratament de canal efectuat corect și la timp! Amânarea lui duce la transformarea infecțiilor în formă cronică (chisturi osoase dureroase) și, în final, la pierderea dintelui.`,
 
-    image1: "/tratamente/endodontie-prezentare.jpg", // Imagine sugestivă cu tratamentul la microscop
+    image1: "/endo11.jpeg", // Imagine sugestivă cu tratamentul la microscop
     image2: "/endodontie2.jpg"  // Imagine cu radiografia digitală / detalii de canal radicular
   },
   parodontologie: {
@@ -178,7 +178,7 @@ Cheia succesului pe termen lung constă în parteneriatul cu pacientul și în p
 SFATUL ECHIPEI SANADENT:
 Nu ignorați niciodată sângerarea gingivală! Ea este primul semnal de alarmă pe care vi-l transmite organismul. Tratată în faza de gingivită, boala este complet reversibilă.`,
 
-    image1: "/parodontologie2.jpg", // Imagine cu gingii sănătoase / diagnostic parodontal
+    image1: "/paro2.jpeg", // Imagine cu gingii sănătoase / diagnostic parodontal
     image2: "/parodontologie3.jpg"  // Imagine cu medicul specialist / tratament laser sau chiuretaj
   },
   'estetica-dentara': {
@@ -254,8 +254,8 @@ Dezavantaje & Limite:
 SFATUL ECHIPEI SANADENT:
 Fiecare organism are o capacitate uimitoare de adaptare, însă pentru a evita deteriorarea prematură a dinților, vă recomandăm să planificați o consultație ortodontică timpurie pentru copilul dumneavoastră. Prevenția salvează zâmbete!`,
 
-    image1: "/orto1.png", // Imagine sugestivă cu un aparat estetic / safir
-    image2: "/orto2.jpg"  // Imagine cu gutierele transparente Invisalign
+    image1: "/orto3.jpeg", // Imagine sugestivă cu un aparat estetic / safir
+    image2: "/orto4.jpeg"  // Imagine cu gutierele transparente Invisalign
   },
   protetica: {
     title: "Protetică Dentară",
@@ -290,7 +290,7 @@ Există însă și situații în care puntea rămâne o alternativă excelentă:
 SFATUL ECHIPEI SANADENT:
 Chiar dacă pierderea unui singur dinte nu pare să vă afecteze masticația imediat, înlocuirea rapidă a acestuia trebuie să fie o prioritate pentru a preveni prăbușirea și migrarea întregii arcade dentare!`,
 
-    image1: "/protetica1.jpg", // Imagine cu coroane de zirconiu / fațete estetice
+    image1: "/prote1.jpeg", // Imagine cu coroane de zirconiu / fațete estetice
     image2: "/protetica2.jpg"  // Imagine cu diferența vizuală punte vs implant / scanare digitală
   },
   pedodontie: {
@@ -316,7 +316,7 @@ La SanaDent, ne asigurăm că fiecare vizită se încheie cu un sentiment de reu
 SFATUL ECHIPEI SANADENT:
 Fiți un exemplu demn de urmat pentru copiii dumneavoastră! Transformați ritualul spălatului pe dinți de dimineață și de seară într-o activitate comună, distractivă și interactivă în familie!`,
 
-    image1: "/pedo1.jpg", // Imagine caldă cu un copil zâmbitor la consult
+    image1: "/pedo6.jpeg", // Imagine caldă cu un copil zâmbitor la consult
     image2: "/pedo2.jpg"  // Imagine cu interacțiunea dintre medicul pedodont și cel mic
   }
 }

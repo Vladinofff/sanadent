@@ -197,7 +197,7 @@ function EchipaViziune() {
           <div className="space-y-6 text-gray-600 leading-relaxed text-base md:text-lg font-light">
             <p>
               Echipa medicală <strong className="text-gray-900 font-semibold">SanaDent</strong> abordează soluția modernă de 
-              specializare a medicilor pe etape specific de fiecare tratament.
+              specializare a medicilor pe etape specifice fiecarui tratament.
             </p>
             <p>
               Astfel, specialiștii tineri și ambițioși tratează interdisciplinar, 

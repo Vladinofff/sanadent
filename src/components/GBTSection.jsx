@@ -144,13 +144,17 @@ export default function GBTSection() {
               </p>
 
               <div className="bg-sana-lime/10 border border-sana-lime/30 rounded-2xl p-5 mb-6">
-                <p className="text-white font-medium text-lg mb-1">
-                  Sună-ne pentru o <span className="text-sana-lime italic">simulare gratuită</span>
-                </p>
-                <p className="text-sm text-sana-gray-300">
-                  Vezi cum îți va arăta zâmbetul înainte să începi tratamentul.
-                </p>
-              </div>
+  <p className="text-white font-medium text-lg mb-1">
+    Sună-ne pentru o <span className="text-sana-lime italic">simulare gratuită</span>
+  </p>
+  <p className="text-sm text-sana-gray-300 mb-3">
+    Vezi cum îți va arăta zâmbetul înainte să începi tratamentul.
+  </p>
+  <p className="text-[10px] text-sana-gray-400 flex items-start gap-2 pt-3 border-t border-sana-lime/20 leading-relaxed">
+    <span className="text-sana-lime flex-shrink-0 mt-0.5">*</span>
+    <span className="italic">Simularea se poate obține după efectuarea investigațiilor și consultației ortodontice.</span>
+  </p>
+</div>
 
               <a
                 href="tel:+40786511919"

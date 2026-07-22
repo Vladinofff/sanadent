@@ -63,7 +63,7 @@ function DoctorPage() {
               </p>
               
               {foundDoctor.shortDesc && (
-                <p className="text-gray-600 italic mb-6">"{foundDoctor.shortDesc}"</p>
+                <p className="text-gray-600 italic mb-6">{foundDoctor.shortDesc}</p>
               )}
             </div>
           </div>

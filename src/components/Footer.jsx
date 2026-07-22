@@ -66,7 +66,7 @@ export default function Footer() {
                 <Clock size={16} className="text-sana-lime mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-white">Luni - Vineri</div>
-                  <div>8:00 - 20:00</div>
+                  <div>8:30 - 20:00</div>
                 </div>
               </li>
               <li className="flex items-start gap-3 pl-7">

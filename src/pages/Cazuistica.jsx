@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 // IMPORTANT: pozele before/after trebuie să aibă aceeași dimensiune pentru slider să arate bine
 const cases = [
   { id: 1, title: 'Supraproteza implanturi', category: 'Implantologie', before: '/bf1.jpeg', after: '/bf2.jpeg', desc: 'Recuperarea zâmbetului și a funcției masticatorii pentru pacienții cu edentații extinse.' },
-  { id: 2, title: 'Fatete No Prep', category: 'Estetică Dentară', before: '/fatete1.jpeg', after: '/fatete2.jpeg', desc: 'Albire în cabinet cu rezultate vizibile imediat.' },
+  { id: 2, title: 'Fatete No Prep', category: 'Estetică Dentară', before: '/fatete1.jpeg', after: '/fatete2.jpeg', desc: 'Corectarea anomaliilor de forma  a incisivilor laterali prin aplicarea fatetelor ceramice fara slefuirea dintilor.' },
   { id: 3, title: 'Fatete dentare arcada superioara', category: 'Estetică Dentară', before: '/bf3.jpeg', after: '/bf4.jpeg', desc: 'Transformarea completă a zâmbetului cu fațete ceramice aplicate pe arcada superioară' },
   { id: 4, title: 'Reabilitare totala arcada superioara', category: 'Protetică', before: '/bf5.jpeg', after: '/bf6.jpeg', desc: 'Restabilirea funcției și esteticii pentru întreaga arcadă superioară prin lucrări protetice complexe.' },
   { id: 5, title: 'Aparate Dentare', category: 'Ortodonție', before: '/bf7.jpeg', after: '/bf8.jpeg', desc: 'Corectarea malocluziei și obținerea unui zâmbet armonios prin tratament ortodontic complet.' },

@@ -348,7 +348,8 @@ Congresul Societatii Romane de Stomatologie – Clasic si modern in stomatologia
       photo: '/destan.jpeg',
       shortDesc: '',
       fullDesc: `
-Despre mine / Cursuri de specializare: 2018-2024 Facultatea de Medicina Dentara UMF Carol Davila/Bucuresti                                                  Congresul Societatii Romane de Stomatologie - "Tendinte actuale in medicina dentara, Analog sau Digital"- Bucuresti.                                         
+ 2018-2024 Facultatea de Medicina Dentara UMF Carol Davila/Bucuresti 
+ Congresul Societatii Romane de Stomatologie - "Tendinte actuale in medicina dentara, Analog sau Digital"- Bucuresti.                                         
 "Workshopul The Aesthetic treatment of the Anterior teeth:
 Single shade, Layering, Injectable"-Dr. Giancarlo Pongione
 `
@@ -436,7 +437,7 @@ Congresul Societatii Romane de Stomatologie – Clasic si modern in stomatologia
       name: 'Dr. Irina Eftimescu',
       role: 'Medic Dentist ·  Endodonție',
       photo: '/irina.jpeg',
-      shortDesc: 'Specialist în endodonție, cu practică orientată spre tratamente de canal moderne și microscopie dentară.',
+      shortDesc: 'Medic dentist cu practică orientată spre tratamente de canal moderne și microscopie dentară.',
       fullDesc: `
 STUDII
 
