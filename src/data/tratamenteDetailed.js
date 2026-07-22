@@ -149,7 +149,7 @@ Deși implică tehnologie de vârf și implicit costuri inițiale, tratamentul e
 SFATUL ECHIPEI SANADENT:
 Conștientizați importanța unui tratament de canal efectuat corect și la timp! Amânarea lui duce la transformarea infecțiilor în formă cronică (chisturi osoase dureroase) și, în final, la pierderea dintelui.`,
 
-    image1: "/endo11.jpeg", // Imagine sugestivă cu tratamentul la microscop
+    image1: "/endodon1.jpeg", // Imagine sugestivă cu tratamentul la microscop
     image2: "/endodontie2.jpg"  // Imagine cu radiografia digitală / detalii de canal radicular
   },
   parodontologie: {
